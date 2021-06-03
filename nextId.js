@@ -5,7 +5,7 @@ function nextId(data) {
         //get highest value in array
        
         
-        let lastDataEntry = sortedData[sortedData.length - 1]
+        let lastDataEntry = data.length - 1]
         return lastDataEntry.id + 1
 
     //if there is no data array or if it is empty, return 1
