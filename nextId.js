@@ -2,8 +2,7 @@ function nextId(data) {
     // your code here
     //Check that there is a data array and that it is not empty i.e. it has a length
     if (Array.isArray(data) && data.length) {    
-        //sort ascending
-        let sortedData = [data.id].sort(function(a, b){return b-a})
+        //get highest value in array
         
         let lastDataEntry = sortedData[sortedData.length - 1]
         return lastDataEntry.id + 1
