@@ -5,10 +5,10 @@ function nextId(data) {
         //sort array of objects by key value ascending
         data.sort(function(a, b) {
             return a.id - b.id
-        }).id + 1
+        })
 
-        //let lastDataEntry = data[data.length - 1]
-        //return lastDataEntry.id + 1
+        let lastDataEntry = data[data.length - 1]
+        return lastDataEntry.id + 1
 
     //if there is no data array or if it is empty, return 1
     } else {
